@@ -1,0 +1,21 @@
+{
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "bziluch/easyadmin-users",
+        "version": "dev-master",
+        "source": {
+          "url": "git://github.com/bziluch/easyadmin-users.git",
+          "type": "git",
+          "reference": "main"
+        },
+        "autoload": {
+          "psr-0": {
+            "App\\Controller\\EasyAdmin\\": "src"
+          }
+        }
+      }
+    }
+  ]
+}
