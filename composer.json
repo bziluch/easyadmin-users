@@ -1,7 +1,6 @@
 {
   "name": "bziluch/easyadmin-users",
   "description": "Simple pack with basic controller, to check how to publish packages",
-  "version": "dev-master",
   "source": {
     "url": "git://github.com/bziluch/easyadmin-users.git",
     "type": "git",
@@ -14,5 +13,6 @@
   },
   "require": {
     "php": ">=8.1.8"
-  }
+  },
+  "license": "MIT"
 }
