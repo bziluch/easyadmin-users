@@ -1,24 +1,18 @@
 {
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "bziluch/easyadmin-users",
-        "version": "dev-master",
-        "source": {
-          "url": "git://github.com/bziluch/easyadmin-users.git",
-          "type": "git",
-          "reference": "main"
-        },
-        "autoload": {
-          "psr-0": {
-            "App\\Controller\\EasyAdmin\\": "src"
-          }
-        },
-        "require": {
-          "php": ">=8.1.8"
-        }
-      }
+  "name": "bziluch/easyadmin-users",
+  "description": "Simple pack with basic controller, to check how to publish packages",
+  "version": "dev-master",
+  "source": {
+    "url": "git://github.com/bziluch/easyadmin-users.git",
+    "type": "git",
+    "reference": "main"
+  },
+  "autoload": {
+    "psr-0": {
+      "App\\Controller\\EasyAdmin\\": "src"
     }
-  ]
+  },
+  "require": {
+    "php": ">=8.1.8"
+  }
 }
