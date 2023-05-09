@@ -1,5 +1,7 @@
 <?php
 
+namespace EasyAdminMaker;
+
 use Symfony\Bundle\MakerBundle\ConsoleStyle;
 use Symfony\Bundle\MakerBundle\DependencyBuilder;
 use Symfony\Bundle\MakerBundle\Generator;
