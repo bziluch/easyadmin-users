@@ -53,36 +53,36 @@ class EasyAdminMenuMaker extends AbstractMaker
      */
     public function generate(InputInterface $input, ConsoleStyle $io, Generator $generator)
     {
-        $schema = $input->getArgument('schema');
-        $io->success("Now generating Table classes for schema " . $schema);
-        $userName = $_SERVER['DATABASE_USER'];
-        $pass = $_SERVER['DATABASE_PASSWORD'];
-
-        $mysql = new MysqlConnection($userName,$pass, $schema);
-        $schemaMaker = new SchemaMaker($mysql,$schema);
-        $schemaMaker->setSchemaTableList();
-        $schemaMaker->createAllSchemaClasses();
-
-        foreach ($schemaMaker->getTablesList() as $table){
-        $io->success("Created Class for table " . implode('-', $table));
-    }
+//        $schema = $input->getArgument('schema');
+//        $io->success("Now generating Table classes for schema " . $schema);
+//        $userName = $_SERVER['DATABASE_USER'];
+//        $pass = $_SERVER['DATABASE_PASSWORD'];
+//
+//        $mysql = new MysqlConnection($userName,$pass, $schema);
+//        $schemaMaker = new SchemaMaker($mysql,$schema);
+//        $schemaMaker->setSchemaTableList();
+//        $schemaMaker->createAllSchemaClasses();
+//
+//        foreach ($schemaMaker->getTablesList() as $table){
+//        $io->success("Created Class for table " . implode('-', $table));
+//    }
 
     }
 
     public function interact(InputInterface $input, ConsoleStyle $io, Command $command)
     {
-        $io->title('Create the database table classes...');
-        $value = '';
-
-        if (null === $input->getArgument('schema')) {
-            $argument = $command->getDefinition()->getArgument('schema');
-            $question = new Question($argument->getDescription());
-            $value = $io->askQuestion($question);
-            $input->setArgument('schema', $value);
-
-        }
-        $value = $input->getArgument('schema');
-        $io->success("Table classes were made from schema " . $value);
+//        $io->title('Create the database table classes...');
+//        $value = '';
+//
+//        if (null === $input->getArgument('schema')) {
+//            $argument = $command->getDefinition()->getArgument('schema');
+//            $question = new Question($argument->getDescription());
+//            $value = $io->askQuestion($question);
+//            $input->setArgument('schema', $value);
+//
+//        }
+//        $value = $input->getArgument('schema');
+//        $io->success("Table classes were made from schema " . $value);
 
         /*$input->setArgument('schema', $io->ask(
             'What is the name of the database schema',
